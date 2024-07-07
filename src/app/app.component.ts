@@ -14,7 +14,7 @@ import { DUMMY_USERS } from './dummy-users';
 })
 export class AppComponent {
   users = DUMMY_USERS;
-  selectedUserId = 'u1';
+  selectedUserId?: string;
   title = 'angular-app';
 
   get selectedUser() {
