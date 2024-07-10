@@ -12,7 +12,7 @@ import { NewTaskComponent } from './new-task/new-task.component';
 export class TasksComponent {
   @Input({ required: true }) userId!: string;
   @Input({ required: true }) name!: string;
-  isAddingTask: boolean = false;
+  isAddingTask = false;
 
   tasks = [
     {
