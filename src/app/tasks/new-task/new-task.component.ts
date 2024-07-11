@@ -16,4 +16,8 @@ export class NewTaskComponent {
   onCancel() {
     this.cancel.emit();
   }
+
+  onSubmit() {
+    console.log(this.enteredTitle, this.enteredSummary, this.enteredDate);
+  }
 }
