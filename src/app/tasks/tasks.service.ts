@@ -44,6 +44,6 @@ export class TasksService {
   }
 
   removeTask(id: string) {
-    return this.tasks.filter((task) => task.id !== id);
+    this.tasks = this.tasks.filter((task) => task.id !== id);
   }
 }
